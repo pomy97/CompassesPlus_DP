@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "music_disc_creator_music_box",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!jukebox_playable": {},
+                "minecraft:item_name": "{\"text\":\"Bounty Compass\"}",
+                "max_stack_size": 1,
+                "enchantment_glint_override": false,
+                "rarity": "uncommon",
+                "item_model": "minecraft:compass"
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "Tracks a target when held",
+                  "color": "gray",
+                  "italic": true
+                },
+                "",
+                {
+                  "text": "Punch a target with the compass to track",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "One-time use",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "text": "Echoes",
+                  "italic": true,
+                  "bold": true,
+                  "color": "#006585"
+                }
+              ]
+            },
+            {
+              "function": "set_custom_data",
+              "tag": "{hunters:{item:'compass'}}"
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "hunters:bounty_compass": 1 
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "sculk_catalyst"
+    },
+    "title": "It Spreads",
+    "description": "Kill a mob near a Sculk Catalyst",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "kill_mob_near_sculk_catalyst"
+    }
+  },
+  "parent": "hunters:root"
+}

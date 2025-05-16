@@ -1,0 +1,1 @@
+$tellraw @a[tag=uthi.dev] [{"text": "","color": "red"},{"text": "Debug: ","bold": true,"color": "#fb82ff"},$(msg)]

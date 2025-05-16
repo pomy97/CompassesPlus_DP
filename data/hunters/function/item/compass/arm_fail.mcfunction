@@ -1,0 +1,2 @@
+playsound minecraft:block.anvil.land master @s ~ ~ ~ 1 2
+tellraw @s [{"entity": "@s","nbt": "SelectedItem.components.\"minecraft:item_name\"","color": "aqua"},{"text": " already has a target!","color": "gray"}]

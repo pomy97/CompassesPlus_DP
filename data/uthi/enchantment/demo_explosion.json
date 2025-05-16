@@ -1,0 +1,58 @@
+{
+  "description": "DEMO ENCHANT: Explosion",
+  "supported_items": "air",
+  "anvil_cost": 0,
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 1
+  },
+  "slots": ["any"],
+  "weight": 1,
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "block_interaction": "none",
+              "radius": 5,
+              "create_fire": false,
+              "large_particle": {
+                "type": "explosion_emitter"
+              },
+              "small_particle": {
+                "type": "explosion_emitter"
+              },
+              "sound": "entity.generic.explode",
+              "damage_type": "explosion",
+              "knockback_multiplier": 1
+            },
+            {
+              "type": "run_function",
+              "function": "uthi:functions/delete"
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:armor_stand"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

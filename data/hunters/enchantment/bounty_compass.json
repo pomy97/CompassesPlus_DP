@@ -1,0 +1,128 @@
+{
+  "supported_items": "air",
+  "anvil_cost": 1,
+  "description": "TECHNICAL:bounty_compass",
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": ["mainhand", "offhand"],
+  "weight": 1,
+  "effects": {
+    "post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "hunters:item/compass/victim_enchant"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#hunters:compass_trackable"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "player"
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "predicates": {
+                        "custom_data": "{hunters:{compass_data:{}}}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "affected": "attacker",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "hunters:item/compass/attacker_enchant"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#hunters:compass_trackable"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "player"
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "predicates": {
+                        "custom_data": "{hunters:{compass_data:{}}}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "hunters:item/compass/tick"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "custom_data": "{hunters:{item:'compass'}}"
+                }
+              }
+            },
+            "type": "player"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "description": "TECHNICAL ENCHANTMENT: Delete user",
+  "supported_items": "air",
+  "anvil_cost": 0,
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 1
+  },
+  "slots": ["any"],
+  "weight": 1,
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "run_function",
+              "function": "uthi:empty"
+            },
+            {
+              "type": "run_function",
+              "function": "uthi:functions/delete"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

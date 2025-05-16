@@ -1,0 +1,31 @@
+[
+  {
+    "function": "set_components",
+    "components": {
+      "minecraft:item_name": "{\"text\":\"Bounty Compass\",\"color\": \"gold\"}"
+    }
+  },
+  {
+    "function": "set_lore",
+    "mode": "replace_all",
+    "lore": [
+      {
+        "text": "TARGET BOUND",
+        "color": "aqua",
+        "italic": false
+      },
+      {
+        "text": "Tracks a target across the three dimensions",
+        "color": "gray",
+        "italic": true
+      },
+      "",
+      {
+        "text": "Echoes",
+        "italic": true,
+        "bold": true,
+        "color": "#006585"
+      }
+    ]
+  }
+]

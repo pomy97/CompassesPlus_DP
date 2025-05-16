@@ -1,0 +1,1 @@
+summon oak_boat ~ ~ ~ {CustomName:"\"Benchy\"",CustomNameVisible:true}

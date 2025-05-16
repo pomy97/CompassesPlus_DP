@@ -1,0 +1,28 @@
+{
+    "values": [
+        "minecraft:wither",
+        "minecraft:ender_dragon",
+        "minecraft:elder_guardian",
+        "minecraft:item_display",
+        "minecraft:item_frame",
+        "minecraft:glow_item_frame",
+        "minecraft:command_block_minecart",
+        "minecraft:painting",
+        "minecraft:marker",
+        "minecraft:area_effect_cloud",
+        "minecraft:block_display",
+        "minecraft:text_display",
+        "minecraft:evoker_fangs",
+        "minecraft:eye_of_ender",
+        "minecraft:falling_block",
+        "minecraft:lightning_bolt",
+        "minecraft:leash_knot",
+        "minecraft:firework_rocket",
+        "minecraft:dragon_fireball",
+        "minecraft:llama_spit",
+        "minecraft:small_fireball",
+        "minecraft:shulker_bullet",
+        "minecraft:wither_skull"
+    ]
+}
+  
