@@ -1,0 +1,15 @@
+[
+  {
+    "function": "set_item",
+    "item": "black_bundle"
+  },
+  {
+    "function": "set_components",
+    "components": {
+      "item_model": "black_bundle",
+      "!custom_model_data": {},
+      "!written_book_content": {},
+      "minecraft:item_name": "{\"text\":\"Bounty Bundle\"}"
+    }
+  }
+]

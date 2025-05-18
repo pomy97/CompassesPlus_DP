@@ -1,0 +1,1 @@
+$scoreboard players operation %$(UUID) hu.deaths = @s hu.deaths

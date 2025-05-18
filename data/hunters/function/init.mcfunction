@@ -17,27 +17,34 @@
 scoreboard objectives add uthipacks.installed dummy
 scoreboard players set BountyCompass uthipacks.installed 1
 
+# values
+scoreboard objectives add hu.numbers dummy
+
 # mafs
-scoreboard objectives add ec.math dummy
-scoreboard players set #1 ec.math 1
-scoreboard players set #2 ec.math 2
-scoreboard players set #4 ec.math 4
-scoreboard players set #5 ec.math 5
-scoreboard players set #10 ec.math 10
-scoreboard players set #20 ec.math 20
-scoreboard players set #25 ec.math 25
-scoreboard players set #50 ec.math 50
-scoreboard players set #100 ec.math 100
+scoreboard objectives add hu.math dummy
+scoreboard players set #1 hu.math 1
+scoreboard players set #2 hu.math 2
+scoreboard players set #4 hu.math 4
+scoreboard players set #5 hu.math 5
+scoreboard players set #10 hu.math 10
+scoreboard players set #20 hu.math 20
+scoreboard players set #25 hu.math 25
+scoreboard players set #50 hu.math 50
+scoreboard players set #100 hu.math 100
 
 #tracking
-scoreboard objectives add ec.dimension dummy
-scoreboard objectives add ec.posX dummy
-scoreboard objectives add ec.posY dummy
-scoreboard objectives add ec.posZ dummy
-scoreboard objectives add ec.deaths deathCount
+scoreboard objectives add hu.dimension dummy
+scoreboard objectives add hu.posX dummy
+scoreboard objectives add hu.posY dummy
+scoreboard objectives add hu.posZ dummy
+scoreboard objectives add hu.deaths deathCount
 
-#> begin the clocks
-function hunters:tick
+#get storage
+execute unless data storage hunters:bounty_storage bounty_storage run data merge storage hunters:bounty_storage {bounties:0,bounty_storage:{}}
+
+#> Begin the clocks
+schedule function hunters:clocks/1s 1s replace
+#schedule function hunters:tick 1t replace
 
 #load msg
 tellraw @a "Bounty Compass Loaded"
