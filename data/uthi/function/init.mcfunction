@@ -10,4 +10,4 @@ team add uthi.no_collision ""
 team modify uthi.no_collision collisionRule never
 team modify uthi.no_collision seeFriendlyInvisibles false
 
-function uthi:tick
+#function uthi:tick

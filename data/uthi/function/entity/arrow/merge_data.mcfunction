@@ -1,1 +1,0 @@
-$data merge entity @s $(arrow_data)

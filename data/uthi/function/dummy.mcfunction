@@ -1,2 +1,0 @@
-execute as @n[type=minecraft:item] if items entity @s container.0 minecraft:bundle[minecraft:bundle_contents~{items:{contains:[{items:["acacia_button","acacia_door"]}]}}]
-give @s minecraft:bundle[minecraft:bundle_contents=[]]
