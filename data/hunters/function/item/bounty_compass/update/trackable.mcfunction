@@ -24,7 +24,7 @@ title @s actionbar {"text": "Tracking Target","color": "gray"}
 tag @s add hu.this
 #if target within 100 blocks, send actionbar msg
 $execute as $(target_UUID) if entity @s[distance=..100] \
-    run title @p[tag=hu.this] actionbar [{"text": "Target [","color": "gray"},{"selector": "@s","color": "red"},{"text": "] is within 100 blocks","color": "gray"}]
+    run title @p[tag=hu.this] actionbar [{"text": "Target [","color": "gray"},{"selector": "$(target_UUID)","color": "red"},{"text": "] is within 100 blocks","color": "gray"}]
 #if target within 50 blocks, p a r t i c l e s
 $execute as $(target_UUID) if entity @s[distance=..50] at @s run particle minecraft:dust{color:[1,0,0],scale:0.5} ~ ~3 ~ 0 .25 0 0 10 force @p[tag=hu.this]
 tag @s remove hu.this
