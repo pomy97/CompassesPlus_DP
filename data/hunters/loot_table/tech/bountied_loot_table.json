@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "UUID",
+                  "target": "ns_dropped_by",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "attacker",
+              "ops": [
+                {
+                  "source": "UUID",
+                  "target": "ns_killed_by",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

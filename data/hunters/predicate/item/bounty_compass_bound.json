@@ -1,16 +1,19 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "type": "item",
-    "slots": {
-      "container.0": {
-        "items": "compass",
-        "predicates": {
-          "custom_data": {
-            "hunters": {
-              "bounty_compass_data": {
-                "bound": true
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "item",
+      "slots": {
+        "contents": {
+          "items": "compass",
+          "predicates": {
+            "custom_data": {
+              "hunters": {
+                "bounty_compass_data": {
+                  "bound": true,
+                  "active": true
+                }
               }
             }
           }
@@ -18,4 +21,4 @@
       }
     }
   }
-}
+]

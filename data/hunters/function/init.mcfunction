@@ -18,7 +18,7 @@ scoreboard objectives add uthipacks.installed dummy
 scoreboard players set BountyCompass uthipacks.installed 1
 
 # values
-scoreboard objectives add hu.numbers dummy
+scoreboard objectives add hu.temp dummy
 
 # mafs
 scoreboard objectives add hu.math dummy

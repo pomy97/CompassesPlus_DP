@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "kill_player": {
+      "trigger": "entity_killed_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[hu.bountied]}"
+        },
+        "entity": {
+            "type": "player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hunters:item/bounty_compass/reward/killed_by_player"
+  }
+}

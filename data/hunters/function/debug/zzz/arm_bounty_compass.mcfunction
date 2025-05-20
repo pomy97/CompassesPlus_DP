@@ -1,24 +1,14 @@
-# from func:item/bounty_compass/bind/attacker_enchant
-#
-# @s = person who hit mob (the bountier)
-
 # STORAGE: 
 # {
-#   player:false/true, #
-#   bounty_UUID:"uuid-mess-in-hyphened-hexidecimal", 
-#   deaths:#, 
-#   id:#, 
-#   target_UUID:"uuid-mess-in-hyphened-hexidecimal"
+#   active: true,
+#   bounty_UUID: "example-UUID-in-hyphened-hexidecimal"
+#   deaths: #int,
+#   id: #int,
+#   player: #boolean
+#   target_UUID: "example-UUID-in-hyphened-hexidecimal"
 # }
 
-#debug
-$tellraw @a[tag=uthi.dev] [{"selector": "@s"},{"text":" - BC:Locked Target "},{"selector": "$(target_UUID)"}]
 
-#sounds
-playsound minecraft:entity.warden.sonic_charge master @s ~ ~ ~ 1 2
-playsound block.respawn_anchor.set_spawn master @s ~ ~ ~ 1 1
-
-#bind compass to ID
 item modify entity @s weapon hunters:bounty_compass/arm
 ##Because I need to use a macro, here's an entire item modifier so I don't have to use some nonsense with item displays and external slots.
 $item modify entity @s weapon.mainhand [\
@@ -42,7 +32,7 @@ $item modify entity @s weapon.mainhand [\
         "italic":false,\
         "extra":[\
           {\
-            selector: "$(bounty_UUID)",\
+            "selector": "$(bounty_UUID)",\
             "color": "red",\
             "italic":false,\
           },\
@@ -55,6 +45,3 @@ $item modify entity @s weapon.mainhand [\
   "entity": "this"\
   }\
 ]
-
-#remove storage data
-data remove storage hunters:temp new_bounty
