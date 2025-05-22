@@ -20,7 +20,7 @@ $execute if data storage hunters:temp data.tracking_data{player:false} unless sc
 $execute unless entity $(target_uuid) if score %$(target_uuid) hu.deaths matches $(deaths) run return run data merge storage hunters:temp {data:{tracking_data:{track_type:0}}}
 
 #check if entity loaded
-$execute if entity $(target_uuid) run return run data merge storage hunters:temp {data{tracking_data:{track_type:1}}}
+$execute if entity $(target_uuid) run return run data merge storage hunters:temp {data:{tracking_data:{track_type:1}}}
 
 # "track_type"
 # 1 = in loaded chunks
