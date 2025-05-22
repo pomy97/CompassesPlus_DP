@@ -1,1 +1,0 @@
-schedule function hunters:tick 1t
