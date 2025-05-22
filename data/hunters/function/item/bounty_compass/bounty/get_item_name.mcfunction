@@ -1,8 +1,8 @@
 # @DorkOrc didn't see this yoink coming
 
 # if there’s no custom_name but there is an item_name, set the custom_name to the item_name
-execute if items entity @s contents *[!custom_name] if data entity @s Item.components."minecraft:item_name" run say item name
-execute if items entity @s contents *[!custom_name] if data entity @s Item.components."minecraft:item_name" run item modify entity @s contents {function:"set_name",entity:"this",name:{nbt:"Item.components.minecraft:item_name",entity:"@s",interpret:true}}
+execute if items entity @s contents *[!custom_name] if data entity @s Item.components.minecraft:item_name run say item name
+execute if items entity @s contents *[!custom_name] if data entity @s Item.components.minecraft:item_name run item modify entity @s contents {function:"set_name",entity:"this",name:{nbt:"Item.components.minecraft:item_name",entity:"@s",interpret:true}}
 
 # if there’s no custom_name yet, set the custom_name to this entity’s name (the item translation)
 execute if items entity @s contents *[!custom_name] run say entity name

@@ -5,14 +5,14 @@
 # STORAGE: 
 # {
 #   player:false/true, #
-#   bounty_UUID:"uuid-mess-in-hyphened-hexidecimal", 
+#   rewarder_uuid:"uuid-mess-in-hyphened-hexidecimal", 
 #   deaths:#, 
 #   id:#, 
-#   target_UUID:"uuid-mess-in-hyphened-hexidecimal"
+#   target_uuid:"uuid-mess-in-hyphened-hexidecimal"
 # }
 
-#debug
-$tellraw @a[tag=uthi.dev] [{"selector": "@s"},{"text":" - BC:Locked Target "},{"selector": "$(target_UUID)"}]
+#give the dude and advancement
+advancement grant @s only hunters:bind_bounty_compass
 
 #sounds
 playsound minecraft:entity.warden.sonic_charge master @s ~ ~ ~ 1 2
@@ -27,7 +27,8 @@ $item modify entity @s weapon.mainhand [\
     tag:{\
       hunters: {\
         "bounty_compass_data": {\
-          "id": $(id) \
+          "id": $(id), \
+          "uuid": $(target_uuid) \
         }\
       }\
     }\
@@ -37,24 +38,37 @@ $item modify entity @s weapon.mainhand [\
     "mode": "replace_all",\
     "lore": [\
       {\
-        "text": "Bound by: [",\
-        "color": "white",\
-        "italic":false,\
-        "extra":[\
+        "type":"translatable",\
+        translate: "item.hunters.bounty_compass.target",\
+        "fallback": "Target: [%s]",\
+        "with":[\
           {\
-            selector: "$(bounty_UUID)",\
+            "selector": "$(target_uuid)",\
             "color": "red",\
             "italic":false,\
-          },\
-          {\
-            "text":"]"\
           }\
-        ]\
+        ],\
+        "color": "white",\
+        "italic": false\
+      },\
+      {\
+        "type":"translatable",\
+        translate: "item.hunters.bounty_compass.bound_by",\
+        "fallback": "Bountied by: [%s]",\
+        "with":[\
+          {\
+            "selector": "$(rewarder_uuid)",\
+            "color": "green",\
+            "italic":false,\
+          }\
+        ],\
+        "color": "white",\
+        "italic": false\
       }\
     ],\
-  "entity": "this"\
+    "entity": "this"\
   }\
 ]
 
 #remove storage data
-data remove storage hunters:temp new_bounty
+#data remove storage hunters:temp data.new_bounty

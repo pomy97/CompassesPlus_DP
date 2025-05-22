@@ -3,16 +3,15 @@
 # STORAGE (tracking_data):
 # {
 #   active:false/true,
-#   bounty_UUID:"uuid-mess-in-hyphened-hexidecimal",
+#   rewarder_uuid:"uuid-mess-in-hyphened-hexidecimal",
 #   deaths:#,
-#   hunter_UUID:"uuid-mess-in-hyphened-hexidecimal",
 #   id:#,
 #   location: {
 #     dimension: "string",
 #     pos: [x, y, z]
 #   },
 #   player:false,
-#   target_UUID:"uuid-mess-in-hyphened-hexidecimal",
+#   target_uuid:"uuid-mess-in-hyphened-hexidecimal",
 #   track_type: #
 # }
 

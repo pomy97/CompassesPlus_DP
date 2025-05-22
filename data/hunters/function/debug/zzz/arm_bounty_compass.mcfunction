@@ -1,11 +1,11 @@
 # STORAGE: 
 # {
 #   active: true,
-#   bounty_UUID: "example-UUID-in-hyphened-hexidecimal"
+#   rewarder_uuid: "example-UUID-in-hyphened-hexidecimal"
 #   deaths: #int,
 #   id: #int,
 #   player: #boolean
-#   target_UUID: "example-UUID-in-hyphened-hexidecimal"
+#   target_uuid: "example-UUID-in-hyphened-hexidecimal"
 # }
 
 
@@ -32,7 +32,7 @@ $item modify entity @s weapon.mainhand [\
         "italic":false,\
         "extra":[\
           {\
-            "selector": "$(bounty_UUID)",\
+            "selector": "$(rewarder_uuid)",\
             "color": "red",\
             "italic":false,\
           },\

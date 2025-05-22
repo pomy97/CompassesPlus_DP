@@ -39,9 +39,6 @@ scoreboard objectives add hu.posY dummy
 scoreboard objectives add hu.posZ dummy
 scoreboard objectives add hu.deaths deathCount
 
-#get storage
-execute unless data storage hunters:bounty_storage bounty_storage run data merge storage hunters:bounty_storage {bounties:0,bounty_storage:{}}
-
 #> Begin the clocks
 schedule function hunters:clocks/1s 1s replace
 #schedule function hunters:tick 1t replace
