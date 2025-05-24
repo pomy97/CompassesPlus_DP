@@ -11,7 +11,7 @@
 #   target_uuid:"uuid-mess-in-hyphened-hexidecimal"
 # }
 
-#give the dude and advancement
+#give the dude an advancement
 advancement grant @s only hunters:bind_bounty_compass
 
 #sounds
@@ -48,7 +48,7 @@ $item modify entity @s weapon.mainhand [\
             "italic":false,\
           }\
         ],\
-        "color": "white",\
+        "color": "gray",\
         "italic": false\
       },\
       {\
@@ -62,7 +62,7 @@ $item modify entity @s weapon.mainhand [\
             "italic":false,\
           }\
         ],\
-        "color": "white",\
+        "color": "gray",\
         "italic": false\
       }\
     ],\
@@ -71,4 +71,4 @@ $item modify entity @s weapon.mainhand [\
 ]
 
 #remove storage data
-#data remove storage hunters:temp data.new_bounty
+data remove storage hunters:temp data.new_bounty

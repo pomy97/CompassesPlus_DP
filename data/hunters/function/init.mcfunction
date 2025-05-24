@@ -41,7 +41,10 @@ scoreboard objectives add hu.deaths deathCount
 
 #> Begin the clocks
 schedule function hunters:clocks/1s 1s replace
-#schedule function hunters:tick 1t replace
+schedule function hunters:clocks/1t 1t replace
+
+# we actually DO need mob loot on, as it's critical for detecting who killed an entity
+gamerule doMobLoot true
 
 #load msg
 tellraw @a "Bounty Compass Loaded"

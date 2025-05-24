@@ -14,7 +14,6 @@
 #         "claimant_uuid" - UUID of the guy who claimed the bounty
 #         "target_uuid" - UUID of the bountied mob
 #         "reward" - reward for claiming the bounty, in "bundle_contents" format
-#         "compass_data": - data auto-applied to new compasses
 #         "active" - is the bounty active?
 #         "player" - is the tracked mob a player?
 #         "deaths" - how many deaths did the entity have a the time of getting tracked?
@@ -77,240 +76,6 @@
               count: 5
             }
           ],
-          compass_data: {
-            lore: [
-              '{
-                "text": "Reward:",
-                "color": "white",
-                "italic": false
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                        "text": "GET THAT MANS HEAD"
-                      },
-                      "1"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                        "hoverEvent": {
-                          "action": "show_entity",
-                          "contents": {
-                            "id": [139300894,-516406590,-1996644620,1569559947],
-                            "type": "item",
-                            "name": {
-                              "translate": "item.minecraft.netherite_ingot"
-                            }
-                          }
-                        },
-                        "insertion": "084d901e-e138-42c2-88fd-9ef45d8d958b",
-                        "translate": "item.minecraft.netherite_ingot"
-                      },
-                      "16"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                        "hoverEvent": {
-                          "action": "show_entity",
-                          "contents": {
-                            "id": [139300894,-516406590,-1996644620,1569559947],
-                            "type": "item",
-                            "name": {
-                              "translate": "block.minecraft.diamond_block"
-                            }
-                          }
-                        },
-                        "insertion": "084d901e-e138-42c2-88fd-9ef45d8d958b",
-                        "translate": "block.minecraft.diamond_block"
-                      },
-                      "16"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                          "hoverEvent": {
-                          "action": "show_entity",
-                          "contents": {
-                            "id": [139300894,-516406590,-1996644620,1569559947],
-                            "type": "item",
-                            "name": {
-                              "translate": "block.minecraft.gold_block"
-                            }
-                          }
-                        },
-                        "insertion": "084d901e-e138-42c2-88fd-9ef45d8d958b",
-                        "translate": "block.minecraft.gold_block"
-                      },
-                      "16"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                        "hoverEvent": {
-                          "action": "show_entity",
-                          "contents": {
-                            "id": [-1609836181,-237614449,-1177161408,-1046084369],
-                            "name": {
-                              "translate": "item.minecraft.enchanted_golden_apple"
-                            },
-                            "type": "minecraft:item"
-                          }
-                        },
-                        "insertion": "a00bd96b-f1d6-4a8f-b9d5-f140c1a604ef",
-                        "translate": "item.minecraft.enchanted_golden_apple"
-                      },
-                      "2"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.more",
-                    "with": [
-                      "3"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": "Bound by: [",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "clickEvent": {
-                      "action": "suggest_command",
-                      "value": "/tell Uthimentius "
-                    },
-                    "color": "red",
-                    "hoverEvent": {
-                      "action": "show_entity",
-                      "contents": {
-                        "id": [-134117548,-1671413414,-1444312058,-314466715],
-                        "type": "player",
-                        "name": "Uthimentius"
-                      }
-                    },
-                    "insertion": "Uthimentius",
-                    "italic": false,
-                    "text": "Uthimentius"
-                  },
-                  {
-                    "text": "]"
-                  }
-                ]
-              }'
-            ],
-            container: [
-              {
-                item: {
-                    id: "minecraft:paper",
-                    components: {
-                      "minecraft:custom_name": '{"text": "GET THAT MANS HEAD"}'
-                    },
-                    count: 1
-                },
-                slot: 0
-              },
-              {
-                item: {
-                    id: "minecraft:netherite_ingot",
-                    count: 16,
-                },
-                slot: 1
-              },
-              {
-                item: {
-                    id: "minecraft:diamond_block",
-                    count: 16,
-                },
-                slot: 2
-              },
-              {
-                item: {
-                    id: "minecraft:gold_block",
-                    count: 16,
-                },
-                slot: 3
-              },
-              {
-                item: {
-                    id: "minecraft:enchanted_golden_apple",
-                    count: 2,
-                },
-                slot: 4
-              },
-              {
-                item: {
-                    id: "minecraft:netherite_upgrade_smithing_template",
-                    count: 5,
-                },
-                slot: 5
-              },
-              {
-                item: {
-                    id: "minecraft:nether_star",
-                    count: 3,
-                },
-                slot: 6
-              },
-              {
-                item: {
-                    id: "minecraft:breeze_rod",
-                    count: 5,
-                },
-                slot: 7
-              }
-            ]
-          },
           active: true,
           deaths: 0
         }
@@ -318,6 +83,7 @@
     },
     {
       uuid: "af503c3f-b772-4ae8-bed0-c7a88e7fc138",
+      player: false,
       location: {
         dimension: "minecraft:overworld",
         pos: [790, 78, -100]
@@ -326,40 +92,7 @@
         {
           id: 1,
           rewarder_uuid: "f8018754-9c60-415a-a9e9-8c06ed419e65",
-          compass_data: {
-            lore: [
-              {
-                "text": "Bound by: [",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "clickEvent": {
-                      "action": "suggest_command",
-                      "value": "/tell Uthimentius "
-                    },
-                    "color": "red",
-                    "hoverEvent": {
-                      "action": "show_entity",
-                      "contents": {
-                        "id": [I;-134117548,-1671413414,-1444312058,-314466715],
-                        "type": "player",
-                        "name": "Uthimentius"
-                      }
-                    },
-                    "insertion": "Uthimentius",
-                    "italic": false,
-                    "text": "Uthimentius"
-                  },
-                  {
-                    "text": "]"
-                  }
-                ]
-              }
-            ]
-          },
           active: false,
-          player: false,
           deaths: 0
         },
         {
@@ -376,121 +109,14 @@
               count: 16
             }
           ],
-          compass_data: {
-            lore: [
-              '{
-                "text": "Reward:",
-                "color": "white",
-                "italic": false,
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                        "hoverEvent": {
-                          "action": "show_entity",
-                          "contents": {
-                            "id": [139300894,-516406590,-1996644620,1569559947],
-                            "type": "item",
-                            "name": {
-                              "translate": "item.minecraft.netherite_scrap"
-                            }
-                          }
-                        },
-                        "insertion": "084d901e-e138-42c2-88fd-9ef45d8d958b",
-                        "translate": "item.minecraft.netherite_scrap"
-                      },
-                      "16"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                "text": " ",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "translate": "container.shulkerBox.itemCount",
-                    "with": [
-                      {
-                        "hoverEvent": {
-                          "action": "show_entity",
-                          "contents": {
-                            "id": [139300894,-516406590,-1996644620,1569559947],
-                            "type": "item",
-                            "name": {
-                              "translate": "item.minecraft.diamond"
-                            }
-                          }
-                        },
-                        "insertion": "084d901e-e138-42c2-88fd-9ef45d8d958b",
-                        "translate": "item.minecraft.diamond"
-                      },
-                      "16"
-                    ]
-                  }
-                ]
-              }',
-              '{
-                text: "Bound by: [",
-                color: "white",
-                italic: false,
-                extra: [
-                  {
-                    clickEvent: {
-                      action: "suggest_command",
-                      value: "/tell aperture_active "
-                    },
-                    "color": "red",
-                    "hoverEvent": {
-                      "action": "show_entity",
-                      "contents": {
-                        "id": [I;-601398344,410272300,-1762192147,-1048219265],
-                        "type": "player",
-                        "name": "aperture_active"
-                      }
-                    },
-                    insertion: "aperture_active",
-                    italic: false,
-                    text: "aperture_active"
-                  },
-                  {
-                    text: "]"
-                  }
-                ]
-              }'
-            ],
-            container: [
-              {
-                item: {
-                  id: "minecraft:netherite_scrap",
-                  count: 16
-                },
-                slot: 0
-              },
-              {
-                item: {
-                  id: "minecraft:diamond",
-                  count: 16
-                },
-                slot: 1
-              }
-            ]
-          },
           active: false,
-          player: false,
           deaths: 0
         }
       ]
     },
     {
       uuid: "626ba37d-871b-44c7-93ba-2d3023789799",
+      player: true,
       location: {
         dimension: "minecraft:the_nether",
         pos: [-290, 15, -472]
@@ -499,40 +125,7 @@
         {
           id: 3,
           rewarder_uuid: "f8018754-9c60-415a-a9e9-8c06ed419e65",
-          compass_data: {
-            lore: [
-              {
-                "text": "Bound by: [",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "clickEvent": {
-                      "action": "suggest_command",
-                      "value": "/tell Uthimentius "
-                    },
-                    "color": "red",
-                    "hoverEvent": {
-                      "action": "show_entity",
-                      "contents": {
-                        "id": [I;-134117548,-1671413414,-1444312058,-314466715],
-                        "type": "player",
-                        "name": "Uthimentius"
-                      }
-                    },
-                    "insertion": "Uthimentius",
-                    "italic": false,
-                    "text": "Uthimentius"
-                  },
-                  {
-                    "text": "]"
-                  }
-                ]
-              }
-            ]
-          },
           active: false,
-          player: true,
           deaths: 784
         }
       ]

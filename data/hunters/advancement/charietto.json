@@ -29,7 +29,7 @@
     }
   },
   "rewards": {
-    "experience": 500
+    "experience": 200
   },
   "parent": "hunters:bind_bounty_compass"
 }

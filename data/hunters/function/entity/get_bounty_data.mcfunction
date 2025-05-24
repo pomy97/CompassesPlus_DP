@@ -3,7 +3,6 @@
 # @s = bountied mob
 
 #> Get my UUID
-#get my UUID using this fancy converter from github: https://github.com/Skubiak0903/Simple-UUID
 function su:convert with entity @s
 data modify storage hunters:temp data.bounty_pos.uuid set from storage su:main out
 

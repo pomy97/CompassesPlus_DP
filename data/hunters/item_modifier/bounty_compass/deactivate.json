@@ -27,11 +27,10 @@
     "mode": "insert",
     "lore": [
       {
-        "text": "TARGET ELIMINATED",
+        "text": "TARGET LOST",
         "color": "red",
         "italic": false
       }
-    ],
-    "offset": 0
+    ]
   }
 ]

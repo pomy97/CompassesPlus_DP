@@ -20,6 +20,7 @@
         "bounty_compass_data": {
           "bound": true,
           "active": true,
+          "reward": false,
           "id": "empty"
         }
       }

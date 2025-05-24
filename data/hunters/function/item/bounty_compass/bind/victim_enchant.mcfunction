@@ -5,7 +5,7 @@
 
 #give bountied mob needed data
 tag @s add hu.bountied
-#data merge entity @s {DeathLootTable:"hunters:tech/bountied_loot_table"}
+data merge entity @s {DeathLootTable:"hunters:tech/bountied_loot_table"}
 data merge entity @s {PersistenceRequired:true}
 
 # # bounty info
@@ -21,6 +21,6 @@ execute store result storage hunters:temp data.new_bounty.deaths int 1 run score
 #get bounty ID
 execute store result storage hunters:temp data.new_bounty.id int 1 run data get storage hunters:bounty_storage bounties
 
-#get my UUID using this fancy converter from github: https://github.com/Skubiak0903/Simple-UUID
+#get my UUID
 function su:convert with entity @s
 data modify storage hunters:temp data.new_bounty.target_uuid set from storage su:main out

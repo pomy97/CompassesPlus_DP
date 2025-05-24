@@ -1,0 +1,1 @@
+function hunters:entity/get_bounty_data

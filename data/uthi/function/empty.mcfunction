@@ -1,1 +1,0 @@
-# this function is intentionally empty

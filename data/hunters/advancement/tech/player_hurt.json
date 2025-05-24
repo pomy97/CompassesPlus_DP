@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "kill_player": {
+      "trigger": "entity_hurt_player",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "hunters:entity/player/check_death"
+  }
+}

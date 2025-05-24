@@ -8,8 +8,30 @@
     "components": {
       "item_model": "black_bundle",
       "!custom_model_data": {},
-      "!written_book_content": {},
-      "minecraft:item_name": "{\"text\":\"Bounty Bundle\"}"
+      "!container": {},
+      "!lodestone_tracker": {},
+      "!enchantments": {},
+      "enchantment_glint_override": true,
+      "minecraft:item_name": "{\"text\":\"Bounty Bundle\"}",
+      "!minecraft:custom_name": {}
     }
+  },
+  {
+    "function": "set_custom_model_data",
+    "strings": {
+      "mode": "replace_all",
+      "values": ["hunters:bounty_bundle"]
+    }
+  },
+  {
+    "function": "set_lore",
+    "mode": "insert",
+    "lore": [
+      {
+        "text": "TARGET ELIMINATED",
+        "color": "red",
+        "italic": false
+      }
+    ]
   }
 ]

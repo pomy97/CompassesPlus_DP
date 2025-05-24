@@ -16,7 +16,7 @@ $data modify storage hunters:temp data.tracking_data.deaths set from storage hun
 
 # If bounty inactive, deactivate the compass
 execute if data storage hunters:temp data.tracking_data{active:false} \
-        run return run function hunters:item/bounty_compass/update/deactivate
+        run return run function hunters:item/bounty_compass/update/deactivate/check_reward with storage hunters:temp data.tracking_data
 
 # check if the mob is ALIVE/trackable
 $execute store result storage hunters:bounty_storage target_data[{uuid:"$(target_uuid)"}].bounties[{id:$(id)}].active byte 1 \

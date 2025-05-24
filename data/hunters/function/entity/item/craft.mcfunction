@@ -1,1 +1,0 @@
-execute if entity @n[dx=1,type=item,tag=hu.item.filled_bundle] run function hunters:item/bounty_compass/bounty/craft_dummy
