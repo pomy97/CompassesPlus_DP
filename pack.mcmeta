@@ -2,6 +2,7 @@
   "pack": {
     "pack_format": 61,
     "description": "Adds a compass to your world",
+    "supported_formats": [61,61]
   },
   "overlays": {
     "entries": [
