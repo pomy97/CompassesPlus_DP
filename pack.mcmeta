@@ -1,6 +1,14 @@
 {
   "pack": {
     "pack_format": 61,
-    "description": "Adds a compass to your world"
+    "description": "Adds a compass to your world",
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "21.4",
+        "formats": 61
+      }
+    ]
   }
 }
