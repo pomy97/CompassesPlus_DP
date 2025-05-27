@@ -22,6 +22,8 @@ execute if data storage hunters:temp data.tracking_data{active:false} \
 $execute store result storage hunters:bounty_storage target_data[{uuid:"$(target_uuid)"}].bounties[{id:$(id)}].active byte 1 \
         run function hunters:item/bounty_compass/track/track_checks with storage hunters:temp data.tracking_data
 
+data modify storage hunters:temp data.tracking_data.dimension set from entity @s Dimension 
+
 #if not player & track_type = 0 OR 1, track
 execute if data storage hunters:temp data.tracking_data{player:false} \
         if data storage hunters:temp data.tracking_data.track_type \

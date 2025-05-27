@@ -23,6 +23,12 @@ title @s actionbar {\
     "color": "gray"\
 }
 
+$execute unless data storage hunters:bounty_storage target_data[{uuid:"$(target_uuid)"}].location{dimension:"$(dimension)"} run title @s actionbar {\
+    "translate": "item.hunters.bounty_compass.wrong_dimension",\
+    "fallback": "Target is not in your dimension",\
+    "color": "gray"\
+}
+
 # Range things
 tag @s add hu.this
 #if target within 100 blocks, send actionbar msg
