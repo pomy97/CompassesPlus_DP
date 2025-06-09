@@ -1,0 +1,42 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "R": "redstone",
+    "D": "diamond",
+    "E": "ender_eye",
+    "I": "iron_ingot",
+    "L": "lodestone",
+    "S": "#minecraft:soul_fire_base_blocks"
+  },
+  "pattern": [
+    "DRD",
+    "IEI",
+    "SLS"
+  ],
+  "category": "equipment",
+  "group": "hunters:bounty_compass",
+  "result": {
+    "id": "compass",
+    "count": 1,
+    "components": {
+      "lodestone_tracker": {},
+                "minecraft:item_name": "{\"translate\":\"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\",\"color\": \"white\"}",
+                "minecraft:custom_name": "{\"translate\":\"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\",\"color\": \"white\",\"italic\": false}",
+      "rarity": "common",
+      "max_stack_size": 1,
+      "enchantment_glint_override": true,
+      "custom_data": { "hunters": { "item": "bounty_compass" } },
+      "custom_model_data": {
+        "strings": ["hunters:bounty_compass"]
+      },
+      "enchantments": {
+        "hunters:bounty_compass": 1
+      },
+      "minecraft:lore": [
+        "{\"text\": \"Tracks a target when held in Main Hand\",\"color\": \"gray\",\"italic\": false}",
+        "{\"text\": \"Punch a target with the compass to track\",\"color\": \"gray\",\"italic\": false}",
+        "{\"text\": \"One-time use\",\"color\": \"gray\",\"italic\": false}"
+      ]
+    }
+  }
+}

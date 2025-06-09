@@ -1,0 +1,1534 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "poisonous_potato",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "!item_model": {},
+                "!consumable": {}
+              }
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "hunters": {
+                  "death_uuid_item": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "UUID",
+                  "target": "hunters.target",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "attacking_player",
+              "ops": [
+                {
+                  "source": "UUID",
+                  "target": "hunters.claimant",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "allay"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/allay"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "armadillo"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/armadillo"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "axolotl"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/axolotl"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "bat"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/bat"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "bee"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/bee"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "blaze"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/blaze"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "bogged"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/bogged"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "breeze"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/breeze"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "camel"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/camel"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "cat"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/cat"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "cave_spider"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/cave_spider"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "chicken"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/chicken"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "cod"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/cod"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "cow"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/cow"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "creeper"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/creeper"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "dolphin"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/dolphin"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "donkey"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/donkey"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "drowned"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/drowned"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "elder_guardian"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/elder_guardian"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "ender_dragon"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/ender_dragon"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "enderman"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/enderman"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "endermite"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/endermite"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "evoker"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/evoker"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "fox"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/fox"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "frog"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/frog"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "ghast"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/ghast"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "giant"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/giant"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "glow_squid"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/glow_squid"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "goat"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/goat"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "guardian"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/guardian"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "hoglin"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/hoglin"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "horse"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/horse"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "husk"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/husk"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "illusioner"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/illusioner"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "iron_golem"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/iron_golem"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "llama"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/llama"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "magma_cube"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/magma_cube"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "mooshroom"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/mooshroom"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "mule"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/mule"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "ocelot"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/ocelot"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "panda"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/panda"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "parrot"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/parrot"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "phantom"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/phantom"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "pig"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/pig"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "piglin"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/piglin"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "piglin_brute"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/piglin_brute"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "pillager"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/pillager"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "polar_bear"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/polar_bear"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "pufferfish"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/pufferfish"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "rabbit"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/rabbit"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "ravager"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/ravager"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "salmon"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/salmon"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "sheep"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/sheep"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "shulker"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/shulker"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "silverfish"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/silverfish"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "skeleton"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/skeleton"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "skeleton_horse"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/skeleton_horse"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "slime"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/slime"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "sniffer"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/sniffer"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "snow_golem"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/snow_golem"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "spider"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/spider"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "squid"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/squid"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "stray"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/stray"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "strider"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/strider"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "tadpole"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/tadpole"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "trader_llama"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/trader_llama"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "tropical_fish"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/tropical_fish"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "turtle"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/turtle"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "vex"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/vex"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "villager"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/villager"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "vindicator"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/vindicator"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "wandering_trader"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/wandering_trader"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "warden"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/warden"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "witch"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/witch"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "wither"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/wither"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "wither_skeleton"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/wither_skeleton"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "wolf"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/wolf"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "zoglin"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/zoglin"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "zombie"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/zombie"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "zombie_horse"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/zombie_horse"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "zombie_villager"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/zombie_villager"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "zombified_piglin"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/zombified_piglin"
+        }
+      ]
+    }
+  ]
+}

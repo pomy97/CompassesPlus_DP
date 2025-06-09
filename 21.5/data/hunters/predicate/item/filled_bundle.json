@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "item",
+    "slots": {
+      "contents": {
+        "items": "#bundles",
+        "predicates": {
+          "bundle_contents": {
+            "items": {
+              "size": {
+                "min": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

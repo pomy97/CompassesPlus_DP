@@ -1,0 +1,144 @@
+{
+  "supported_items": "air",
+  "anvil_cost": 1,
+  "description": "",
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": ["mainhand"],
+  "weight": 1,
+  "effects": {
+    "post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "hunters:item/bounty_compass/bind/victim_enchant"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#hunters:bounty_compass_trackable"
+            }
+          },
+          {
+            "condition": "entity_properties",
+            "entity": "attacker",
+            "predicate": {
+              "type": "player"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "predicates": {
+                      "custom_data": "{hunters:{bounty_compass_data:{bound:true}}}"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Health:0.0f}"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "affected": "attacker",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "hunters:item/bounty_compass/bind/attacker_enchant"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#hunters:bounty_compass_trackable"
+            }
+          },
+          {
+            "condition": "entity_properties",
+            "entity": "attacker",
+            "predicate": {
+              "type": "player"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "predicates": {
+                      "custom_data": "{hunters:{bounty_compass_data:{bound:true}}}"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Health:0.0f}"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "hunters:item/bounty_compass/track/tick"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "custom_data": "{hunters:{bounty_compass_data:{active:true,bound:true}}}"
+                  }
+                }
+              },
+              "type": "player"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

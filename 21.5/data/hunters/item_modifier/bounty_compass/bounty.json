@@ -1,0 +1,26 @@
+[
+  {
+    "function": "set_components",
+    "components": {
+      "rarity": "uncommon"
+    }
+  },
+  {
+    "function": "set_custom_model_data",
+    "strings": {
+      "mode": "replace_all",
+      "values": ["hunters:bounty_compass_reward"]
+    }
+  },
+  {
+    "function": "set_custom_data",
+    "tag": {
+      "hunters": {
+        "item": "bounty_compass",
+        "bounty_compass_data": {
+          "reward": true
+        }
+      }
+    }
+  }
+]

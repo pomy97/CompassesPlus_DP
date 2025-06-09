@@ -1,0 +1,32 @@
+[
+  {
+    "function": "set_components",
+    "components": {
+      "lodestone_tracker": {}
+    }
+  },
+  {
+    "function": "set_custom_model_data",
+    "strings": {
+      "mode": "replace_all",
+      "values": ["hunters:bounty_compass_bound"]
+    }
+  },
+  {
+    "function": "set_custom_data",
+    "tag": {
+      "hunters": {
+        "bounty_compass_data": {
+          "active": true
+        }
+      }
+    }
+  },
+  {
+    "function": "set_lore",
+    "mode": "replace_section",
+    "lore": [],
+    "offset": 0,
+    "size": 1
+  }
+]

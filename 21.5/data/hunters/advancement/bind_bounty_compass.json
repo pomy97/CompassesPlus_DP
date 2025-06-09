@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:compass",
+      "components": {
+        "rarity": "rare",
+        "enchantment_glint_override": true,
+        "custom_model_data": {
+          "strings": ["hunters:bounty_compass"]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancements.nether.bind_compass.title",
+      "fallback": "Dead or Alive"
+    },
+    "description": {
+      "translate": "advancements.nether.bind_compass.description",
+      "fallback": "Place a Bounty on a target"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "place_bounty": {
+      "trigger": "impossible"
+    }
+  },
+  "parent": "minecraft:nether/use_lodestone"
+}
