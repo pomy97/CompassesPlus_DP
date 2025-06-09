@@ -54,7 +54,7 @@ For Bukkit servers, make sure `allow-non-player-entities-on-scoreboards` is set 
 
 # Credits
 Any libraries, code, etc used in this project
-- **Simple-UUID** by **Skubiak0903**
+- **Simple-UUID** by **@Skubiak0903**
   - [Project Github](https://github.com/Skubiak0903/Simple-UUID)
   - [Skubiak0903's Github](https://github.com/Skubiak0903)
 - **Item Name to NBT** by **@DorkOrc**
