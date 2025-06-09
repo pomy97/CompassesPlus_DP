@@ -1,7 +1,24 @@
 {
   "pack": {
     "pack_format": 61,
-    "description": "Adds a compass to your world",
+    "description": [
+      {
+        "text": "Compasses",
+        "color": "white"
+      },
+      {
+        "text": "+",
+        "color": "red"
+      },
+      {
+        "text": "\nPack by ",
+        "color": "gray"
+      },
+      {
+        "text": "Uthimentius",
+        "color": "#ff0000"
+      }
+    ],
     "supported_formats": [61,71]
   },
   "overlays": {
