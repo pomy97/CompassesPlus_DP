@@ -5,7 +5,7 @@ This datapack adds a new compass to the game (with more to come), completely in 
 Please check the section at the bottom of this page for info on how to get this datapack to work properly.  
 # Compasses Added
 ## Bounty Compass
-This is a compass that elegantly tracks mobs and players! This could also be used for more dynamic Minecraft Manhunts.  
+This is a compass that tracks mobs and players! This could also be used for more dynamic Minecraft Manhunts.  
 ### Obtaining
 You can obtain a Bounty Compass by crafting it in a crafting table.  
 ![Crafting Recipe](https://github.com/user-attachments/assets/19052d7d-9e03-42c2-920a-19bb3b8d368f)  
@@ -42,7 +42,7 @@ Killing the target of the bounty compass will allow you to claim the bounty when
 # Optional Resource Pack
 There is an optional resource pack as well! It gives the bounty compass different textures depending on it's state.  
 ![respack demo](https://github.com/user-attachments/assets/48ef48ef-36fd-465e-a62c-c03e50f151dc)
-- [Github Repo](https://github.com/pomy97/CompassesPlus_RP)
+**[[Github Repo](https://github.com/pomy97/CompassesPlus_RP)]**  
 
 # Known Issues
 **Bounty Compasses can cause ghost items**  
