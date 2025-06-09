@@ -12,7 +12,8 @@
       "!lodestone_tracker": {},
       "!enchantments": {},
       "enchantment_glint_override": true,
-      "minecraft:item_name": "\"Bounty Bundle\""
+      "minecraft:item_name": "\"Bounty Bundle\"",
+      "rarity": "epic"
     }
   },
   {
