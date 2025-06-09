@@ -47,5 +47,4 @@ schedule function hunters:clocks/1t 1t replace
 gamerule doMobLoot true
 
 #load msg
-tellraw @a "Bounty Compass Loaded"
-tellraw @a [{"color": "red","text": "Sub to Uthi!"},{"color": "white","text": " ["},{"color": "gray","text": "www.youtube.com/@uthimentius","italic": true,"clickEvent": {"action": "open_url", "value": "https://www.youtube.com/@uthimentius?sub_confirmation=1"}},{"color": "white","text": "]"}]
+tellraw @a ["Compasses",{"color":"red","text":"+"},{"color":"green","text":" was successfully loaded!\nSub to Uthi! ","extra":[]},{"color":"white","text":"["},{"color":"gray","italic":true,"text":"www.youtube.com/@pomy97","clickEvent":{"action":"open_url","value":"https://www.youtube.com/@pomy97?sub_confirmation=1"}},{"color":"white","text":"]"}]
