@@ -18,7 +18,8 @@ item modify entity @n[tag=hu.apply_lore] contents {\
       "extra": [\
         {\
           "type": "translatable",\
-          "translate": "container.shulkerBox.itemCount",\
+          "translate": "item.container.item_count",\
+          "fallback": "%s x%s",\
           "with": [\
             {\
               "nbt": "Item.components.minecraft:custom_name",\

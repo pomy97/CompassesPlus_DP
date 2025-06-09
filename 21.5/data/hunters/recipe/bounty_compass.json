@@ -9,8 +9,8 @@
     "S": "#minecraft:soul_fire_base_blocks"
   },
   "pattern": [
-    "DRD",
-    "IEI",
+    "DRD", 
+    "IEI", 
     "SLS"
   ],
   "category": "equipment",
@@ -20,8 +20,16 @@
     "count": 1,
     "components": {
       "lodestone_tracker": {},
-                "minecraft:item_name": "{\"translate\":\"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\",\"color\": \"white\"}",
-                "minecraft:custom_name": "{\"translate\":\"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\",\"color\": \"white\",\"italic\": false}",
+      "written_book_content":{
+        "author": "",
+        "title": "Bounty Compass"
+      },
+      "minecraft:item_name": {
+        "translate": "item.hunters.bounty_compass",
+        "fallback": "Bounty Compass",
+        "color": "white",
+        "italic": false
+      },
       "rarity": "common",
       "max_stack_size": 1,
       "enchantment_glint_override": true,
@@ -33,10 +41,19 @@
         "hunters:bounty_compass": 1
       },
       "minecraft:lore": [
-        "{\"text\": \"Tracks a target when held in Main Hand\",\"color\": \"gray\",\"italic\": false}",
-        "{\"text\": \"Punch a target with the compass to track\",\"color\": \"gray\",\"italic\": false}",
-        "{\"text\": \"One-time use\",\"color\": \"gray\",\"italic\": false}"
-      ]
+        {
+          "translate": "item.hunters.bounty_compass.instruction",
+          "fallback": "Punch a target to bind the compass to it",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "container",
+          "written_book_content"
+        ]
+      } 
     }
   }
 }

@@ -11,11 +11,15 @@
               "function": "minecraft:set_components",
               "components": {
                 "lodestone_tracker": {},
-                "minecraft:item_name": "{\"translate\":\"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\",\"color\": \"white\"}",
-                "minecraft:custom_name": "{\"translate\":\"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\",\"color\": \"white\",\"italic\": false}",
+                "minecraft:item_name": "{\"translate\": \"item.hunters.bounty_compass\",\"fallback\": \"Bounty Compass\"}",
+                "written_book_content": {
+                  "author": "",
+                  "title": "Bounty Compass"
+                },
                 "rarity": "common",
                 "max_stack_size": 1,
-                "enchantment_glint_override": true
+                "enchantment_glint_override": true,
+                "hide_additional_tooltip": {}
               }
             },
             {
@@ -23,17 +27,8 @@
               "mode": "replace_all",
               "lore": [
                 {
-                  "text": "Tracks a target when held in Main Hand",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "Punch a target with the compass to track",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "One-time use",
+                  "translate": "item.hunters.bounty_compass.instruction",
+                  "fallback": "Punch a target to bind the compass to it",
                   "color": "gray",
                   "italic": false
                 }

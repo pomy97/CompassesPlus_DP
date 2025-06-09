@@ -28,7 +28,7 @@ $item modify entity @s weapon.mainhand [\
       hunters: {\
         "bounty_compass_data": {\
           "id": $(id), \
-          "uuid": $(target_uuid) \
+          "uuid": "$(target_uuid)" \
         }\
       }\
     }\

@@ -27,7 +27,8 @@
     "mode": "insert",
     "lore": [
       {
-        "text": "TARGET LOST",
+        "translate": "item.hunters.bounty_compass.target_lost",
+        "fallback": "TARGET LOST",
         "color": "red",
         "italic": false
       }

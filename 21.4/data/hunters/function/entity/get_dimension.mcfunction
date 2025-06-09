@@ -14,7 +14,6 @@ $data modify storage hunters:bounty_storage target_data[{uuid:"$(uuid)"}].locati
 team join uthi.no_collision
 effect give @s invisibility infinite 0 true
 attribute @s scale base set 0.01
-data merge entity @s[type=piglin_brute] {DeathLootTable:"uthi:empty",Health:0,NoAI:true,ArmorDropChances:[0,0,0,0],HandDropChances:[0,0],body_armor_drop_chance:0,HandItems:[{},{}]}
 
 #delete self
 tp @s ~ -1000 ~

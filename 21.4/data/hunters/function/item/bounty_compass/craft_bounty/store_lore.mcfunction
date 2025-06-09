@@ -16,10 +16,9 @@ $execute unless data storage hunters:temp data.reward{excess_slots:-1} run item 
         {\
           "type": "translatable",\
           "translate": "container.shulkerBox.more",\
+          "fallback": "and %s more",\
           "with": [\
-            {\
-              "text": "$(excess_slots)"\
-            }\
+            "$(excess_slots)"\
           ]\
         }\
       ]\

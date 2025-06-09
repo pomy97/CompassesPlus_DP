@@ -1,7 +1,16 @@
 {
   "supported_items": "air",
   "anvil_cost": 1,
-  "description": "",
+  "description": {
+    "translate": "item.hunters.bounty_compass.description",
+    "fallback": "Tracks a target when held in %s",
+    "with": [
+      {
+        "translate": "options.mainHand"
+      }
+    ],
+    "color": "gray"
+  },
   "max_cost": {
     "base": 1,
     "per_level_above_first": 0

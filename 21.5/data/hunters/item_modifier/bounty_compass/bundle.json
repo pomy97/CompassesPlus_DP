@@ -12,8 +12,7 @@
       "!lodestone_tracker": {},
       "!enchantments": {},
       "enchantment_glint_override": true,
-      "minecraft:item_name": "{\"text\":\"Bounty Bundle\"}",
-      "!minecraft:custom_name": {}
+      "minecraft:item_name": "Bounty Bundle"
     }
   },
   {
@@ -28,7 +27,8 @@
     "mode": "insert",
     "lore": [
       {
-        "text": "TARGET ELIMINATED",
+        "translate": "item.hunters.bounty_compass.target_eliminated",
+        "fallback": "TARGET ELIMINATED",
         "color": "red",
         "italic": false
       }

@@ -11,14 +11,14 @@ execute as @s[type=item] \
         run tag @s add hu.item.filledBundle
 
 execute as @s[type=item] \
-        if items entity @s contents *[custom_data~{"hunters": {"item": 'bounty_compass'}}] \
+        if items entity @s contents compass[custom_data~{"hunters": {"item": 'bounty_compass'}}] \
         unless items entity @s contents *[custom_data~{"hunters": {"bounty_compass_data": {"bound": true}}}] \
         run tag @s add hu.item.unboundBountyCompass
 
 #> Crafting
 # Reward Compass
 execute as @s[type=item] \
-        if items entity @s contents *[custom_data~{"hunters": {"bounty_compass_data": {"bound": true, "active": true, "reward":false}}}] \
+        if items entity @s contents compass[custom_data~{"hunters": {"bounty_compass_data": {"bound": true, "active": true, "reward":false}}}] \
         at @s \
         align xyz \
         if block ~ ~-1 ~ crafting_table \
@@ -27,7 +27,7 @@ execute as @s[type=item] \
 
 #Clone Compass
 execute as @s[type=item] \
-        if items entity @s contents *[custom_data~{"hunters": {"bounty_compass_data": {"bound": true, "active": true}}}] \
+        if items entity @s contents compass[custom_data~{"hunters": {"bounty_compass_data": {"bound": true, "active": true}}}] \
         at @s \
         align xyz \
         if block ~ ~-1 ~ crafting_table \

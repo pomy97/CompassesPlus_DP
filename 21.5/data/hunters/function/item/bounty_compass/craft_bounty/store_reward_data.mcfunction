@@ -12,7 +12,7 @@ function hunters:item/bounty_compass/craft_bounty/store_container_data with stor
 # apply
 data modify entity @s Item.components.minecraft:container set from storage hunters:temp data.reward.container
 
-#> GETTING THE LORE
+#> GETTING THE LORE because the default container showing is stoobid lookin
 data merge storage hunters:temp {data:{reward:{excess_slots:-1}}}
 execute if score #itemCount hu.temp matches 6.. run function hunters:item/bounty_compass/craft_bounty/zzz_get_bundle_data/1
 function hunters:item/bounty_compass/craft_bounty/store_lore with storage hunters:temp data.reward
