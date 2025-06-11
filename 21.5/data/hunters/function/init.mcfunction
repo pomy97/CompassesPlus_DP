@@ -15,7 +15,7 @@
 #> Scoreboards
 #universal scoreboards
 scoreboard objectives add uthipacks.installed dummy
-scoreboard players set BountyCompass uthipacks.installed 1
+scoreboard players set Compasses+ uthipacks.installed 1
 
 # values
 scoreboard objectives add hu.temp dummy
@@ -42,9 +42,6 @@ scoreboard objectives add hu.deaths deathCount
 #> Begin the clocks
 schedule function hunters:clocks/1s 1s replace
 schedule function hunters:clocks/1t 1t replace
-
-# we actually DO need mob loot on, as it's critical for detecting who killed an entity
-gamerule doMobLoot true
 
 #load msg
 tellraw @a ["",{color:"white",text:"Compasses"},{color:"red",text:"+ "},{color:"green",text:"successfully loaded!\n"},{color:"gray",text:"Created by pomy97\n"},{color:"green",text:"Support the creator!\n"},"  [",{color:"red",text:"Main Channel",click_event:{action:"open_url",url:"https://www.youtube.com/@pomy97?sub_confirmation=1"},hover_event:{action:"show_text",value:["",{text:"Click to go to pomy97's Main Youtube Channel!"}]}},"]\n  [",{color:"red",text:"Second Channel",click_event:{action:"open_url",url:"https://www.youtube.com/@pomy96?sub_confirmation=1"},hover_event:{action:"show_text",value:["",{text:"Click to go to pomy97's Second Youtube Channel!"}]}},"]\n  [",{color:"aqua",text:"Bluesky",click_event:{action:"open_url",url:"https://bsky.app/profile/pomy97.bsky.social"},hover_event:{action:"show_text",value:["",{text:"Click to go to pomy97's Bluesky page!"}]}},"]"]
