@@ -19,7 +19,7 @@
         "color": "#ff0000"
       }
     ],
-    "supported_formats": [61,71]
+    "supported_formats": [61,80]
   },
   "overlays": {
     "entries": [
@@ -30,6 +30,10 @@
       {
         "directory": "21.5",
         "formats": 71
+      },
+      {
+        "directory": "21.5",
+        "formats": 80
       }
     ]
   }
