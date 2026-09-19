@@ -1,7 +1,5 @@
 # Compasses+
-This pack (currently) adds a compass called the Bounty Compass and works like a Manhunt Compass with loads of extra features. See the **Compasses Added** section for more details.  
-More compasses to come in future updates!  
-### This datapack is currently in development! You may encounter bugs. Please report any bugs on my [issue tracker](https://github.com/pomy97/CompassesPlus_DP/issues).  
+### This datapack is no longer receiving updates.
 
 <details>
 <summary>IMPORTANT FOR SERVER OWNERS</summary>
